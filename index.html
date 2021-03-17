@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold; display: block;}
+        input[type="submit"]{background-color: lightskyblue; border-radius: 5px;color: white; display: block; margin-top: 20px; padding: 5px 10px; border: solid 2px lightsteelblue;}
+        select {margin-bottom: 10px;}
+        form {width: 45%; padding: 20px;border: 2px solid orange; background-color: gainsboro;}
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm" name="empForm">
+        <label for="id">8-Digit Employee ID</label>
+        <input type="text" id="ide" maxlength="8" required>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="nam" required>
+
+        <label for="ext">4-Digit Extension</label>
+        <input type="text" id="ext" maxlength="4" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="ema" required>
+
+        <label for="department">Department</label>
+        <select id="dep" required>
+            <option value="Administrative">Administrative</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Executive">Executive</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Quality Assurance">Quality Assurance</option>
+            <option value="Sales">Sales</option>
+        </select>
+
+        <input type="submit" id="submit" value="Add Employee">
+    </form>
+</body>
+</html>
